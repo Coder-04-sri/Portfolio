@@ -59,18 +59,18 @@ app.post("/api/contact", async (req, res) => {
       },
     });
 
-    await transporter.sendMail({
-      from: process.env.EMAIL_USER,
-      to: process.env.EMAIL_USER,
-      subject: `Portfolio Message from ${name}`,
-      text: `
-Name: ${name}
-Email: ${email}
+//     await transporter.sendMail({
+//       from: process.env.EMAIL_USER,
+//       to: process.env.EMAIL_USER,
+//       subject: `Portfolio Message from ${name}`,
+//       text: `
+// Name: ${name}
+// Email: ${email}
 
-Message:
-${message}
-      `,
-    });
+// Message:
+// ${message}
+//       `,
+//     });
 
     console.log("Email sent successfully");
 
