@@ -40,7 +40,7 @@ const handleSubmit = async (e) => {
   e.preventDefault();
 
   try {
-    const response = await fetch("https://portfolio-a12n.onrender.com/api/test", {
+    const response = await fetch("https://portfolio-a12n.onrender.com/api/contact", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
