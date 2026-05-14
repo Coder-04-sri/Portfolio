@@ -12,18 +12,11 @@
   "author": "",
   "license": "ISC",
   "type": "commonjs",
-  "dependencies": {
-    "cors": "^2.8.6",
-    "dotenv": "^17.4.2",
-    "express": "^5.2.1",
-    "mongoose": "^9.6.2",
-    "nodemailer": "^8.0.7"
-  },
   "devDependencies": {
-     "cors": "...",
-  "dotenv": "...",
-  "express": "...",
-  "mongoose": "...",
-  "nodemailer": "..."
+    "cors": "file:...",
+    "dotenv": "file:...",
+    "express": "file:...",
+    "mongoose": "file:...",
+    "nodemailer": "file:..."
   }
 }
