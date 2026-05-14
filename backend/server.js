@@ -59,7 +59,7 @@ app.post("/api/contact", async (req, res) => {
       },
     });
 
-    const transporter = nodemailer.createTransport({
+    await transporter.sendMail({
       from: process.env.EMAIL_USER,
       to: process.env.EMAIL_USER,
       subject: `Portfolio Message from ${name}`,
