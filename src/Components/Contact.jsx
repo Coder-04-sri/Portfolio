@@ -15,7 +15,7 @@ function Contact() {
 
 
  useEffect(() => {
-  fetch("http://localhost:5000/api/test")
+  fetch("https://portfolio-a12n.onrender.com/api/test")
     .then((res) => res.json())
     .then((data) => console.log(data))
     .catch((err) => console.log(err));
@@ -40,7 +40,7 @@ const handleSubmit = async (e) => {
   e.preventDefault();
 
   try {
-    const response = await fetch("http://localhost:5000/api/contact", {
+    const response = await fetch("https://portfolio-a12n.onrender.com/api/test", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
